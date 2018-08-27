@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "spring.datasource.hibernate.ddl-auto",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.hibernate.ddl-auto'"
+  },
+  {
+    "name": "spring.datasource.jpa",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.jpa'"
+  },
+  {
+    "name": "spring.datasource.show-sql",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.show-sql'"
+  },
+  {
+    "name": "spring.mvc.message",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mvc.message'"
+  }
+]}

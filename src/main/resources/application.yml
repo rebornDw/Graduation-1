@@ -1,0 +1,35 @@
+spring: 
+#mvc配置
+  mvc:
+   view:
+     prefix: /WEB-INF/jsp/
+     suffix: .jsp
+  messages:
+     basename : i18n/messages/messages
+     encoding : UTF-8
+    
+
+#数据库配置
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://127.0.0.1:3306/springboot?setUnicode=true&characterEncoding=utf8
+     username: root
+     password: password
+
+ 
+
+  
+#项目配置     
+server:
+  port: 8081
+
+
+
+     
+#指定mybatis映射文件的地址
+mybatis:
+  type-aliases-package: com.bs.work.model   
+
+ 
+
+  
