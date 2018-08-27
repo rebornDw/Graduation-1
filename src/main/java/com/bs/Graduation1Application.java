@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {
-"com.bs.work.Controller, com.bs.work.dao,com.bs.work.model, com.bs.work.Manager" })
+"com.bs.work.Controller, com.bs.work.dao,com.bs.work.model, com.bs.work.Manager,com.bs.work.handle" })
 @MapperScan("com.bs.work.Dao")
 
 public class Graduation1Application {

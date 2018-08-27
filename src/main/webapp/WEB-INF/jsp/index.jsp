@@ -18,10 +18,6 @@
         />
         <meta name="application-name" content="sprFlat admin template" />
         <!-- Import google fonts - Heading first/ text second -->
-        <link rel='stylesheet' type='text/css' 
-        <!--[if lt IE 9]>
-
-<![endif]-->
         <!-- Css files -->
         <!-- Icons -->
         <link href="assets-xitong/css/icons.css" rel="stylesheet" />
@@ -208,7 +204,9 @@
                             </li>
                             <li class="dropdown">
                                 <a href="#" data-toggle="dropdown">
-                                    <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">SuggeElson</a>
+                                    <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">
+                                    ${User.username}                                  
+                                    </a>
                                 <ul class="dropdown-menu right" role="menu">
                                     <li><a href="profile"><i class="st-user"></i> Profile</a>
                                     </li>

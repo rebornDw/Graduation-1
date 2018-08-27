@@ -6,7 +6,7 @@
 	
 	
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.backstretch.min.js"></script>
@@ -100,11 +100,13 @@
 						</div>
 						<div class="form-group">
 							<input
+							    type="button"
 								style="background: #87CE00; width: 490px; height: 50px; color: white;"
 								class="btn" value="登陆" onclick="ok()">
 						</div>
 						<div class="form-group">
 							<input
+							    type="button"
 								style="background: #87CE00; width: 490px; height: 50px; color: white;"
 								class="btn" value="加入我们"
 								onclick="zhuce()">
@@ -142,27 +144,18 @@
 				},
 				success : function(data) {
 					if (data == "200") {
-						alert("欢迎主人");
-					} else {
-						alert(data);
+						alert("登陆成功");
+						window.location.href="/index";
+					} else if(data == "500"){
+						alert("请确认您输入的账户密码");
 					}
 				}
 			});
 		}
 		
 		
-		function zhuce() {
-			alert('zc');
-			var param = "/zhuce";
-			$.ajax({
-				url : param,
-				type : "post",
-				dataType : "json",
-				data : {	
-				},
-				success : function() {					
-				}
-			});
+		function zhuce() {		
+			window.location.href="/zhuce";	
 		}
 	</script>
 

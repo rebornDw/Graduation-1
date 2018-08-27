@@ -21,7 +21,7 @@ public interface UserDao {
     @Select("SELECT * FROM tb_user")
     public List<User> getUserList();
  
-    @Insert("insert into tb_user(username, password, ctm) values(#{username}, #{password}, now())")
+    @Insert("insert into tb_user(username, password, ctm,email,yourself) values(#{username}, #{password},now(), #{email},#{yourself})")
     public int add(User user);
  
     @Update("UPDATE tb_user SET username = #{user.username} , password = #{user.password} WHERE id = #{id}")
