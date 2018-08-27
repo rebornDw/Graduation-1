@@ -76,13 +76,13 @@
 							class="registration-form">
 							<div class="form-group">
 								<label class="sr-only" for="username">Username(not null)</label>
-								<input type="text" name="username" placeholder="First name..."
+								<input type="text" name="username" placeholder="Username..."
 									class="username form-control" id="username">
 							</div>
 							<div class="form-group">
 								<label class="sr-only" for="form-last-name">Password(not
 									null)</label> <input type="text" name="password"
-									placeholder="Last name..." class="form-last-name form-control"
+									placeholder="Password..." class="form-last-name form-control"
 									id="password">
 							</div>
 							<div class="form-group">
