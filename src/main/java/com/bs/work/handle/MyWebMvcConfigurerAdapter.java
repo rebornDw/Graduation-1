@@ -33,6 +33,7 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 				excludePathPatterns("/js/**").
 				excludePathPatterns("/login").
 				excludePathPatterns("/toRegiser").
+				excludePathPatterns("/register").
 				excludePathPatterns("/checkUser");
 				
 		
