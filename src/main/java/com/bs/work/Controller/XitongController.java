@@ -18,23 +18,23 @@ public class XitongController{
     
     @RequestMapping("/typo")
     public String forwor(){
-        return "typo";
+        return "service/typo";
     }
 
     @RequestMapping("/file")
     public String file(){
-        return "file";
+        return "service/file";
     }
 
     
     @RequestMapping("/list")
     public String list(){
-        return "list";
+        return "service/list";
     }
     
     @RequestMapping("/wysiwyg")
     public String wysiwyg(){
-        return "wysiwyg";
+        return "service/wysiwyg";
     }
        
     

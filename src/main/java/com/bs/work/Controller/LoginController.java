@@ -22,19 +22,19 @@ public class LoginController{
    
     
     @RequestMapping("/index")
-    public String forwor(HttpServletRequest request,HttpServletResponse response){
+    public String index(HttpServletRequest request,HttpServletResponse response){
         return "index";
     }
 
-    @RequestMapping("/zhuce")
-    public String forworzhuce(){
-    	return "zhuce";
+    @RequestMapping("/register")
+    public String register(){
+    	return "member/register";
     }
 
     
-    @RequestMapping("/denglu")
-    public String forwordenglu(){
-        return "denglu";
+    @RequestMapping("/login")
+    public String login(){
+        return "member/login";
     }
     
    
@@ -42,7 +42,7 @@ public class LoginController{
     
     @RequestMapping("/checkUser")
     @ResponseBody
-    public String forwordenglu(HttpServletRequest request,HttpServletResponse response,
+    public String checkUser(HttpServletRequest request,HttpServletResponse response,
                     @RequestParam(value = "username") String username,
                     @RequestParam(value = "password")  String password) throws IOException{
         User userByName = usermanager.getUserByName(username);
@@ -60,7 +60,7 @@ public class LoginController{
         }
     }
     
-    @RequestMapping("/register")
+    @RequestMapping("/toRegister")
     @ResponseBody
     public String register(HttpServletRequest request,HttpServletResponse response,
                     @RequestParam(value = "username") String username,

@@ -126,7 +126,7 @@
 				return;
 			}
 			
-			var param = "/register";
+			var param = "/toRegister";
 			$.ajax({
 				url : param,
 				type : "post",
@@ -140,7 +140,7 @@
 				success : function(data) {
 					if (data == "200") {
 						alert("注册成功");
-						window.location.href="/denglu";
+						window.location.href="/login";
 					} else {
 						alert("注册失败");
 					}

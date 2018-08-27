@@ -6,7 +6,7 @@
 	
 	
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <script src="assets/js/jquery-1.11.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.backstretch.min.js"></script>
@@ -72,7 +72,7 @@
 				<div class="col-sm-5 form-box">
 					<div class="form-top">
 						<div class="form-top-left">
-							<h3>Welcome To XiaoGui</h3>
+							<h3><spring:message code="denglu.welcome"></spring:message></h3>
 							<p>请输入用户名和密码:</p>
 						</div>
 						<div class="form-top-right">
@@ -155,7 +155,7 @@
 		
 		
 		function zhuce() {		
-			window.location.href="/zhuce";	
+			window.location.href="/register";	
 		}
 	</script>
 
