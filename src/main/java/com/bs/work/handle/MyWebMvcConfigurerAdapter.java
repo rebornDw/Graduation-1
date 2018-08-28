@@ -21,7 +21,7 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		// 自定义拦截器，添加拦截路径和排除拦截路径
-		
+/*		
 		InterceptorRegistration addPathPatterns = registry.
 				
 				addInterceptor(fileUploadInterceptor).			
@@ -35,12 +35,7 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 				excludePathPatterns("/toRegiser").
 				excludePathPatterns("/register").
 				excludePathPatterns("/checkUser");
-				
-		
-		
-
-		
-		System.out.println(addPathPatterns+"-------------------------");
+*/
 	}
 
 }

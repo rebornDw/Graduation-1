@@ -14,7 +14,10 @@ public class User {
     private String password;
 	private String email;
     private String yourself;
-    private Date ctm;
+    private String  identity;
+
+
+	private Date ctm;
  
     public User() {
     }
@@ -23,10 +26,27 @@ public class User {
         this.username = username;
         this.password = password;
         this.email = email;
-        this.yourself = yourself;             
+        this.yourself = yourself;  
         this.ctm = new Date();
     }
+    
+    public User(String username, String password,String email,String yourself,Date ctm,String identity) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.yourself = yourself;  
+        this.identity=identity;
+        this.ctm = new Date();
+    }
+   
+    
+    public String getIdentity() {
+		return identity;
+	}
 
+	public void setIdentity(String identity) {
+		this.identity = identity;
+	}
 	public int getId() {
 		return id;
 	}
