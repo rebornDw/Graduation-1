@@ -16,10 +16,6 @@ public class PackageUtil{
      * @return
      */
     public static List<String> GetClassNames(String prefix, String packages){
-        System.out.println(System.getProperty("user.dir") 
-                        + ((!StringUtils.isNullOrEmpty(prefix)) ? ("\\" + prefix.replace(".", "\\") + "\\") : "\\") 
-                        + packages.replace(".", "\\"));
-        
         File file = new File(System.getProperty("user.dir") 
                         + ((!StringUtils.isNullOrEmpty(prefix)) ? ("\\" + prefix.replace(".", "\\") + "\\") : "\\") 
                         + packages.replace(".", "\\"));

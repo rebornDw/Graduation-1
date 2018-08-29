@@ -23,15 +23,15 @@ public class CrateTables{
     private String url;
 
     @Value("${spring.datasource.username}")
-    private String userName;
+    private String username;
 
     @Value("${spring.datasource.password}")
-    private String passWord;
+    private String password;
     
     @RequestMapping("/crateTables")
     @ResponseBody
     public String crateTables() throws ClassNotFoundException, SQLException{
-        Connection connection = JdbcUtils.getConnection(driverClassName, url, userName, passWord);
+        Connection connection = JdbcUtils.getConnection(driverClassName, url, username, password);
         // 要建的表的注释所在的包名
         String packages = "com.bs.work.model";
         List<String> getClassNames = PackageUtil.GetClassNames("src.main.java", packages);
