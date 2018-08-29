@@ -47,6 +47,7 @@ public class CreatTable{
                                 break;
                             case "boolean" : sql.append(annotation.value() +" " + "boolean");
                                 break;
+                                
                         }
                         if (annotation.isKey()) {
                             sql.append(" PRIMARY KEY");

@@ -40,6 +40,8 @@ public @interface Column {
      * @return 返回列明
      */
     String value();
+    
+
 
     /**
      * 是否是主键，默认false
