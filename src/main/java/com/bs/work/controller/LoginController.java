@@ -1,4 +1,4 @@
-package com.bs.work.Controller;
+package com.bs.work.controller;
 import java.io.IOException;
 import java.util.Date;
 
@@ -11,7 +11,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.bs.work.Manager.UserManager;
+
+import com.bs.work.manager.UserManager;
 import com.bs.work.model.User;
 
 @Controller
@@ -46,13 +47,16 @@ public class LoginController{
                     @RequestParam(value = "username") String username,
                     @RequestParam(value = "password")  String password) throws IOException{
         User userByName = usermanager.getUserByName(username);
+        HttpSession session = request.getSession();
         if (userByName == null){
             return "500";
         }
+        if ("0".equals(userByName.getIdentity() )){
+        	session.setAttribute("User", userByName);
+            return "403";           
+        }
         if (userByName.getUsername().equals(username) && userByName.getPassword().equals(password)){
-            System.out.println("登陆成功"); 
-            
-            HttpSession session = request.getSession();
+            System.out.println("登陆成功");           
             session.setAttribute("User", userByName);
             return "200";
         }else{

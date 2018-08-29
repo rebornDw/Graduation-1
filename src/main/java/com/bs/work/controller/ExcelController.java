@@ -1,4 +1,4 @@
-package com.bs.work.Controller;
+package com.bs.work.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

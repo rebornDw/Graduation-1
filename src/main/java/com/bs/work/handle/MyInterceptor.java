@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.bs.work.model.User;
 
 @Component
-public class FileUploadInterceptor  implements HandlerInterceptor {
+public class MyInterceptor  implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)

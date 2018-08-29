@@ -29,13 +29,7 @@
 <link rel="stylesheet" href="assets/css/form-elements.css">
 <link rel="stylesheet" href="assets/css/style.css">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-<!-- Favicon and touch icons -->
+
 <link rel="shortcut icon" href="assets/ico/favicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="144x144"
 	href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -67,7 +61,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-6 book">
-					<img src="assets/img/ebook.png" alt="">
+		<!-- 			<img src="assets/img/ebook@2x.png" alt=""> -->
 				</div>
 				<div class="col-sm-5 form-box">
 					<div class="form-top">
@@ -99,9 +93,9 @@
 								style="width: 490px; height: 50px;">
 						</div>
 						<div class="form-group">
-							<input
+							<input 
 							    type="button"
-								style="background: #87CE00; width: 490px; height: 50px; color: white;"
+								style=" background: #87CE00; width: 490px; height: 50px; color: white;"
 								class="btn" value="登陆" onclick="ok()">
 						</div>
 						<div class="form-group">
@@ -144,11 +138,15 @@
 				},
 				success : function(data) {
 					if (data == "200") {
-						alert("登陆成功");
+						alert("欢迎用户 :"+ username);
 						window.location.href="/index";
 					} else if(data == "500"){
 						alert("请确认您输入的账户密码");
+					}	else if(data == "403"){
+						alert("欢迎管理员 :"+ username);
+						window.location.href="/index";
 					}
+				
 				}
 			});
 		}

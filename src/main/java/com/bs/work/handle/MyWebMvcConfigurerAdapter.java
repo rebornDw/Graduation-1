@@ -16,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 
 	@Resource
-	private FileUploadInterceptor fileUploadInterceptor;
+	private MyInterceptor myInterceptor;
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
@@ -24,7 +24,7 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 		
 		InterceptorRegistration addPathPatterns = registry.
 				
-				addInterceptor(fileUploadInterceptor).			
+				addInterceptor(myInterceptor).			
 				addPathPatterns("/**").
 				excludePathPatterns("/member/**").
 				excludePathPatterns("/assets/**").
@@ -34,13 +34,8 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 				excludePathPatterns("/login").
 				excludePathPatterns("/toRegiser").
 				excludePathPatterns("/register").
-				excludePathPatterns("/checkUser");
-				
-		
-		
+			    excludePathPatterns("/checkUser");
 
-		
-		System.out.println(addPathPatterns+"-------------------------");
 	}
 
 }
