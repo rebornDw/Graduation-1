@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.bs.work.Manager.UserManager;
+import com.bs.work.manager.UserManager;
 import com.bs.work.model.User;
 
 @RunWith(SpringRunner.class)
