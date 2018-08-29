@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.bs.work.manager.UserManager;
 import com.bs.work.model.User;
 
+/**
+ * @author dsh10297
+ *
+ */
 @Controller
 public class LoginController{
 
@@ -22,17 +26,40 @@ public class LoginController{
     private UserManager usermanager;
    
     
+    
+    
+    
+    /**
+     *方法名：index
+     *参数 ：@param request
+     *参数 ：@param response
+     *参数 ：@return
+     *功能：进入系统页面
+     *返回值：String
+     */
     @RequestMapping("/index")
     public String index(HttpServletRequest request,HttpServletResponse response){
         return "index";
     }
 
+    /**
+     *方法名：register
+     *参数 ：@return
+     *功能：进入注册页面
+     *返回值：String
+     */
     @RequestMapping("/register")
     public String register(){
     	return "member/register";
     }
 
     
+    /**
+     *方法名：login
+     *参数 ：@return
+     *功能:进入登陆页面
+     *返回值：String
+     */
     @RequestMapping("/login")
     public String login(){
         return "member/login";
@@ -41,6 +68,17 @@ public class LoginController{
    
        
     
+    /**
+     *方法名：checkUser
+     *参数 ：@param request
+     *参数 ：@param response
+     *参数 ：@param username
+     *参数 ：@param password
+     *参数 ：@return
+     *参数 ：@throws IOException
+     *功能：检查登陆用户的信息
+     *返回值：String
+     */
     @RequestMapping("/checkUser")
     @ResponseBody
     public String checkUser(HttpServletRequest request,HttpServletResponse response,
@@ -64,6 +102,19 @@ public class LoginController{
         }
     }
     
+    /**
+     *方法名：register
+     *参数 ：@param request
+     *参数 ：@param response
+     *参数 ：@param username
+     *参数 ：@param password
+     *参数 ：@param email
+     *参数 ：@param yourself
+     *参数 ：@return
+     *参数 ：@throws IOException
+     *功能：用户注册的功能
+     *返回值：String
+     */
     @RequestMapping("/toRegister")
     @ResponseBody
     public String register(HttpServletRequest request,HttpServletResponse response,

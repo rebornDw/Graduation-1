@@ -28,6 +28,12 @@ public class UserController {
  
 
     
+    /**
+     *方法名：login
+     *参数 ：@return
+     *功能：测试功能
+     *返回值：String
+     */
     @RequestMapping("/sayHello")
     public String login(){
 

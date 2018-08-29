@@ -7,8 +7,8 @@ import com.bs.work.model.User;
 import java.util.List;
  
 /**
- * @ClassName 
- * @Description
+ * 用户接口 
+ * @Description:用户的一些功能
  */
 public interface UserManager {
  

@@ -11,6 +11,7 @@ public class Graduation1ApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		
 	}
 
 }

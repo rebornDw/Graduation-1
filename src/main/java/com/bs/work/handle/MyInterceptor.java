@@ -11,7 +11,10 @@ import com.bs.work.model.User;
 
 @Component
 public class MyInterceptor  implements HandlerInterceptor {
-
+    
+    /* 
+     * 配置类,这里写被拦截后的处理,如果session没有信息,跳转到登陆页面
+     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {

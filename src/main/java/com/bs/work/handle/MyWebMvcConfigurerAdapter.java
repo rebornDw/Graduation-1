@@ -24,8 +24,10 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 		
 		InterceptorRegistration addPathPatterns = registry.
 				
-				addInterceptor(myInterceptor).			
+				addInterceptor(myInterceptor).	
+				//这里是拦截所有路径
 				addPathPatterns("/**").
+				//这里是释放路径
 				excludePathPatterns("/member/**").
 				excludePathPatterns("/assets/**").
 				excludePathPatterns("/assets-xitong/**").

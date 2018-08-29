@@ -19,8 +19,8 @@ import org.springframework.stereotype.Service;
 
  
 /**
- * @ClassName 
- * @Description
+ * @用户接口实现类
+ * @Description:用于用户增删改查
  */
 @Service
 public class UserManagerImp implements UserManager {
