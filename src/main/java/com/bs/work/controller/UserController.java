@@ -1,4 +1,4 @@
-package com.bs.work.Controller;
+package com.bs.work.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import com.bs.work.Manager.UserManager;
+
+import com.bs.work.manager.UserManager;
 import com.bs.work.model.JsonResult;
 import com.bs.work.model.User;
 import java.util.List;
