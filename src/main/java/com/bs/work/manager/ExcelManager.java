@@ -1,4 +1,4 @@
-package com.bs.work.Manager;
+package com.bs.work.manager;
 
 import java.io.File;
 import java.util.List;

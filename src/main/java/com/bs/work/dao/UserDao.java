@@ -1,4 +1,4 @@
-package com.bs.work.Dao;
+package com.bs.work.dao;
 
 
 

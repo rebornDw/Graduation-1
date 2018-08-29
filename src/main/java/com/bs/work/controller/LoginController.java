@@ -1,4 +1,4 @@
-package com.bs.work.Controller;
+package com.bs.work.controller;
 import java.io.IOException;
 import java.util.Date;
 
@@ -11,7 +11,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.bs.work.Manager.UserManager;
+
+import com.bs.work.manager.UserManager;
 import com.bs.work.model.User;
 
 @Controller

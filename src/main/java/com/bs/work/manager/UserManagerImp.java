@@ -1,9 +1,9 @@
-package com.bs.work.Manager;
+package com.bs.work.manager;
 
 
 
 
-import com.bs.work.Dao.UserDao;
+import com.bs.work.dao.UserDao;
 import com.bs.work.model.User;
 
 import java.util.List;
