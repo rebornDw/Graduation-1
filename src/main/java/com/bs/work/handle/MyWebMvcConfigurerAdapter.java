@@ -1,4 +1,4 @@
-package com.bs.work.handle;
+/*package com.bs.work.handle;
 
 
 
@@ -26,7 +26,7 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 				
 				addInterceptor(myInterceptor).	
 				//这里是拦截所有路径
-				addPathPatterns("/**").
+				//addPathPatterns("/**").
 				//拦截建表路径
 				excludePathPatterns("/crateTables").
 				//这里是释放路径
@@ -43,3 +43,4 @@ public class MyWebMvcConfigurerAdapter implements  WebMvcConfigurer  {
 	}
 
 }
+*/

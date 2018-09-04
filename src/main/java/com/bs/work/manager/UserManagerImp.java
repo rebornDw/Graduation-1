@@ -59,4 +59,8 @@ public class UserManagerImp implements UserManager {
     public User getUserByName(String name) {
         return userDao.getUserByName(name);
     }
+    
+    public void UserByName(String name) {
+        
+    }
 }

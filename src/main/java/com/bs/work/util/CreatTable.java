@@ -1,6 +1,7 @@
 package com.bs.work.util;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -17,7 +18,7 @@ public class CreatTable{
         Table table = null;
         try{
             Class<?> c = Class.forName(className);
-            
+           
             // 1、拿到类上的注解
             boolean annotationPresent = c.isAnnotationPresent(Table.class);
             if(annotationPresent) {

@@ -59,7 +59,7 @@ public class UserController {
         return ResponseEntity.ok(r);
     }
  
-    /**
+  /**
      * 查询用户列表
      * @return
      */
@@ -78,7 +78,7 @@ public class UserController {
         return ResponseEntity.ok(r);
     }
  
-    /**
+ /**
      * 添加用户
      * @param user
      * @return
@@ -104,7 +104,7 @@ public class UserController {
         return ResponseEntity.ok(r);
     }
  
-    /**
+   /**
      * 根据id删除用户
      * @param id
      * @return

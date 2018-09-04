@@ -14,7 +14,7 @@
         />
         <meta name="application-name" content="sprFlat admin template" />
         <!-- Import google fonts - Heading first/ text second -->
-        <link rel='stylesheet' type='text/css' 
+        <link rel='stylesheet' type='text/css' />
         <!--[if lt IE 9]>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />

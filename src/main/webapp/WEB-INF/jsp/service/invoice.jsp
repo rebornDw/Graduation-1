@@ -14,7 +14,7 @@
         />
         <meta name="application-name" content="sprFlat admin template" />
         <!-- Import google fonts - Heading first/ text second -->
-        <link rel='stylesheet' type='text/css' 
+        <link rel='stylesheet' type='text/css' />
 
 <![endif]-->
         <!-- Css files -->
