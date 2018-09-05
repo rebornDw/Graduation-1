@@ -670,7 +670,7 @@ body.full-screen #header {
 ----------------------------------------- */
 #header {
   height: 50px;
-  background: #75b9e6;
+  background: #111111;
   z-index: 999;
   position: absolute;
   width: 100%;

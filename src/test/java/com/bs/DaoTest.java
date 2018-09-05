@@ -1,4 +1,4 @@
-package com.bs;
+/*package com.bs;
 
 import java.util.List;
 
@@ -57,3 +57,4 @@ public class DaoTest {
 	}
 	
 }
+*/

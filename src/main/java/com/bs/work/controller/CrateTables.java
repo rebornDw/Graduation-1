@@ -1,4 +1,4 @@
-package com.bs.work.controller;
+/*package com.bs.work.controller;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -46,3 +46,4 @@ public class CrateTables{
     }
 
 }
+*/

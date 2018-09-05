@@ -1072,7 +1072,7 @@
             breadcrumb.empty();
             breadcrumb.append('<li>'+homeIcon+'<a href="index.html">Home</a>'+rightArrow+'</li>');
 
-            if (navsub.closest('li').hasClass('hasSub')) {
+        /*    if (navsub.closest('li').hasClass('hasSub')) {
                 //get previous
                 navel1 = navsub.prev('a.expand');
                 link = navel1.attr('href');
@@ -1089,7 +1089,7 @@
                 icon = navel.children('i').prop('outerHTML');
                 text = navel.children('.indicator').remove().end().text();
                 breadcrumb.append('<li>'+ icon +' '+ text +'</li>');
-            }         
+            }  */       
 
         }
 

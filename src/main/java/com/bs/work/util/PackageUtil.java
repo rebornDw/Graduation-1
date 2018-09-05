@@ -1,4 +1,4 @@
-package com.bs.work.util;
+/*package com.bs.work.util;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,12 +9,12 @@ import com.mysql.jdbc.StringUtils;
 public class PackageUtil{
 
     // 加载包下面的所有类，并把类的全限定名返回
-    /**
+    *//**
      * 
      * @param prefix 前缀 倘若使用SpringBoot项目,则需要加上前缀src.main.java,普通Java项目需要加src
      * @param packages 包名
      * @return
-     */
+     *//*
     public static List<String> GetClassNames(String prefix, String packages){
         File file = new File(System.getProperty("user.dir") 
                         + ((!StringUtils.isNullOrEmpty(prefix)) ? ("\\" + prefix.replace(".", "\\") + "\\") : "\\") 
@@ -29,4 +29,4 @@ public class PackageUtil{
         return classNames;
     }
     
-}
+}*/

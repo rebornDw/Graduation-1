@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +26,9 @@ public class LoginController{
 
     @Autowired
     private UserManager usermanager;
-   
+    
+    private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
+    
     
     
     
@@ -39,6 +43,8 @@ public class LoginController{
      */
     @RequestMapping("/index")
     public String index(HttpServletRequest request,HttpServletResponse response){
+    	LOGGER.info("index---------------------------------------------------OK");
+    	LOGGER.error("index---------------------------------------------------OK");
         return "index";
     }
 
@@ -61,7 +67,9 @@ public class LoginController{
      *返回值：String
      */
     @RequestMapping("/login")
-    public String login(){
+    public String login(){	
+    	LOGGER.info("login---------------------------------------------------OK");
+    	LOGGER.error("login---------------------------------------------------OK");
         return "member/login";
     }
     

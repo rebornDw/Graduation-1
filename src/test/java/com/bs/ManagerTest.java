@@ -1,4 +1,4 @@
-package com.bs;
+/*package com.bs;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,3 +28,4 @@ public class ManagerTest {
 	}
 
 }
+*/

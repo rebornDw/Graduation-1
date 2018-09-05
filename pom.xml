@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.bs</groupId>
+	<groupId>com.bs.work</groupId>
 	<artifactId>Graduation-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -25,6 +25,30 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-servlet-api</artifactId>
+			<version>8.0.39</version>
+			<!-- <scope>provided</scope> -->
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -38,7 +62,7 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.3.2</version>
 		</dependency>
-        <!-- mysql -->
+		<!-- mysql -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -63,20 +87,22 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
+
+
 
 		<!-- servlet 依赖 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
+			<!-- <scope>provided</scope> -->
 		</dependency>
 
 		<!-- 添加 JSTL 支持 -->
@@ -87,33 +113,28 @@
 		</dependency>
 
 
-
-
-
-
-
-
-
-
-		<!--集合工具 -->	
+		<!--集合工具 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
 			<version>4.2</version>
 		</dependency>
 		<!-- fastjson -->
+
+
+
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.49</version>
 		</dependency>
-		
+
 		<!-- 模板引擎依赖 -->
-		 <dependency>
-	  <groupId>org.freemarker</groupId>
-	  <artifactId>freemarker</artifactId>
-	  <version>2.3.25-incubating</version>
-	</dependency> 
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.25-incubating</version>
+		</dependency>
 		<!-- excel依赖 -->
 		<!-- <dependency> <groupId>org.apache.poi</groupId> <artifactId>poi</artifactId> 
 			<version>3.17</version> </dependency> <dependency> <groupId>org.apache.poi</groupId> 
@@ -125,6 +146,13 @@
 		<!--文件上传 -->
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-thymeleaf</artifactId> 
 			</dependency> -->
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-legacy</artifactId>
+			<version>1.1.0.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 
@@ -132,6 +160,9 @@
 
 
 	<build>
+
+		<finalName>bs</finalName>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -146,6 +177,8 @@
 					<fork>true</fork>
 				</configuration>
 			</plugin>
+
+
 		</plugins>
 	</build>
 

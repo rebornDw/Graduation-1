@@ -6,7 +6,7 @@
 <html >
     <head>
         <meta charset="utf-8">
-        <title>Dashboard</title>
+        <title>程序小屋</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -163,49 +163,16 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="nav navbar-nav pull-right">
-                            <li>
-                                <a href="#" id="toggle-header-area"><i class="ec-download"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown"><i class="br-alarm"></i> <span class="notification">5</span></a>
-                                <ul class="dropdown-menu notification-menu right" role="menu">
-                                    <li class="clearfix">
-                                        <i class="ec-chat"></i> 
-                                        <a href="#" class="notification-user"> Ric Jones </a> 
-                                        <span class="notification-action"> replied to your </span> 
-                                        <a href="#" class="notification-link"> comment</a>
-                                    </li>
-                                    <li class="clearfix">
-                                        <i class="st-pencil"></i> 
-                                        <a href="#" class="notification-user"> SuggeElson </a> 
-                                        <span class="notification-action"> just write a </span> 
-                                        <a href="#" class="notification-link"> post</a>
-                                    </li>
-                                    <li class="clearfix">
-                                        <i class="ec-trashcan"></i> 
-                                        <a href="#" class="notification-user"> SuperAdmin </a> 
-                                        <span class="notification-action"> just remove </span> 
-                                        <a href="#" class="notification-link"> 12 files</a>
-                                    </li>
-                                    <li class="clearfix">
-                                        <i class="st-paperclip"></i> 
-                                        <a href="#" class="notification-user"> C. Wiilde </a> 
-                                        <span class="notification-action"> attach </span> 
-                                        <a href="#" class="notification-link"> 3 files</a>
-                                    </li>
-                                    <li class="clearfix">
-                                        <i class="st-support"></i> 
-                                        <a href="#" class="notification-user"> John Simpson </a> 
-                                        <span class="notification-action"> add support </span> 
-                                        <a href="#" class="notification-link"> ticket</a>
-                                    </li>
-                                </ul>
-                            </li>
+                        <ul class="nav navbar-nav pull-right" style="color:green;">
                             <li class="dropdown">
                                 <a href="#" data-toggle="dropdown">
                                     <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">
-                                    ${User.username}                                  
+                                    <c:if test="${null==User.username}">
+                                                                                            请登录 
+                                    </c:if>                                                                   
+                                    <c:if test="${User.username!=''}">
+                                    ${User.username} 
+                                    </c:if>                                                                   
                                     </a>
                                 <ul class="dropdown-menu right" role="menu">
                                     <li><a href="profile"><i class="st-user"></i> Profile</a>
@@ -291,7 +258,7 @@
                 <ul id="sideNav" class="nav nav-pills nav-stacked">
                     <li class="top-search">
                         <form>
-                            <input type="text" name="search" placeholder="Search ...">
+                            <input type="text" name="search" placeholder="搜索 ...">
                             <button type="submit"><i class="ec-search s20"></i>
                             </button>
                         </form>
@@ -606,7 +573,7 @@
                     <div class="col-lg-12 heading">
                         <h1 class="page-header"><i class="im-screen"></i> Dashboard</h1>
                         <!-- Start .bredcrumb -->
-                        <ul id="crumb" class="breadcrumb">
+                        <ul id="crumb" class="breadcrumb">                    
                         </ul>
                         <!-- End .breadcrumb -->
                         <!-- Start .option-buttons -->
