@@ -45,7 +45,7 @@
 
 
 
-<title><spring:message code="zhuce.title"></spring:message></title>
+<title>注册页面</title>
 
 <body>
 	<!-- Top content -->
@@ -58,13 +58,11 @@
 				<div class="col-sm-5 form-box">
 					<div class="form-top">
 						<div class="form-top-left">
-							<h3>
-								<spring:message code="zhuce.welcome"></spring:message>
-							</h3>
+							
 							<p>
-								<spring:message code="zhuce.description"></spring:message>
+								非常感谢您的加入
 							</p>
-							<p>Please enter your registration information:</p>
+							<p>Thank you very much for joining us</p>
 						</div>
 						<div class="form-top-right">
 							<i class="fa fa-pencil"></i>
@@ -99,9 +97,15 @@
 									id="yourself"></textarea>
 							</div>
 							<input
+							class="form-about-yourself form-control"
 							    type="button"
-								style="background: #87CE00; width: 408px; height: 50px; color: white;"
+								style="background: #87CE00;  height: 50px; color: white;"
 								class="btn" value="注册" onclick="zhuce();">
+								<input
+							class="form-about-yourself form-control"
+							    type="button"
+								style="background: #87CE00;  height: 50px; color: white;"
+								class="btn" value="已注册过" onclick="javascript:window.location.href='login'">
 						</form>
 					</div>
 				</div>

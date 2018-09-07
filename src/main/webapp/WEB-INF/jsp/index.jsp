@@ -6,7 +6,7 @@
 <html >
     <head>
         <meta charset="utf-8">
-        <title>程序小屋</title>
+        <title>STUDIO</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -39,6 +39,7 @@
         <link rel="icon" href="assets-xitong/img/ico/favicon.ico" type="image/png">
         <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
         <meta name="msapplication-TileColor" content="#3399cc" />
+        
     </head>
     <body>
         <!-- Start #header -->
@@ -52,140 +53,31 @@
                     </div>
                     <nav class="top-nav" role="navigation">
                         <ul class="nav navbar-nav pull-left">
+                            
                             <li id="toggle-sidebar-li">
-                                <a href="#" id="toggle-sidebar"><i class="en-arrow-left2"></i>
+                                <a href="#" id="toggle-sidebar">目录<br> <i class="en-arrow-left2"></i> 
                         </a>
                             </li>
-                            <li>
-                                <a href="#" class="full-screen"><i class="fa-fullscreen"></i></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown"><i class="ec-cog"></i><span class="notification">10</span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#"><i class="en-database"></i> Database <span class="notification">3</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="st-cube"></i> Packages <span class="notification blue">17</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="st-health"></i> Disconnects <span class="notification yellow">1</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="im-images"></i> Images <span class="notification teal">320</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="st-users"></i> Users <span class="notification orange">2k</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="st-meter"></i> Traffic <span class="notification magenta">2tb</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="im-coin"></i> Finances <span class="notification pink">+3k</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="st-folder"></i> Directories <span class="notification green">17</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="st-bag"></i> Orders <span class="notification purple">12</span></a>
-                                    </li>
-                                    <li><a href="#"><i class="ec-contract"></i> Contracts <span class="notification dark">7</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown"><i class="ec-mail"></i><span class="notification">4</span></a>
-                                <ul class="dropdown-menu email" role="menu">
-                                    <li class="mail-head">
-                                        <div class="clearfix">
-                                            <div class="pull-left">
-                                                <a href="email-inbox"><i class="ec-archive"></i></a>
-                                            </div>
-                                            <span>Inbox</span> 
-                                            <div class="pull-right">
-                                                <a href="email-inbox"><i class="st-pencil"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="search-email">
-                                        <form>
-                                            <input type="text" name="search" placeholder="Search for emails">
-                                            <button type="submit"><i class="ec-search"></i>
-                                            </button>
-                                        </form>
-                                    </li>
-                                    <li class="mail-list clearfix">
-                                        <a href="#">
-                                            <img src="assets-xitong/img/avatars/128.jpg" class="mail-avatar pull-left" alt="avatar">
-                                            <p class="name">
-                                                <span class="status"><i class="en-dot"></i></span> Jason Rivera
-                                                <span class="notification">2</span>
-                                                <span class="time">12:30 am</span>
-                                            </p>
-                                            <p class="msg">
-                                                I contact you regarding my account please can you set up my pass ...
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="mail-list clearfix">
-                                        <a href="#">
-                                            <img src="assets-xitong/img/avatars/129.jpg" class="mail-avatar pull-left" alt="avatar">
-                                            <p class="name">
-                                                <span class="status off"><i class="en-dot"></i></span> Steeve Mclark
-                                                <span class="notification">6</span>
-                                                <span class="time">10:26 am</span>
-                                            </p>
-                                            <p class="msg">
-                                                Good job dude awesome work here, please add theese features ...
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="mail-list clearfix">
-                                        <a href="#">
-                                            <img src="assets-xitong/img/avatars/130.jpg" class="mail-avatar pull-left" alt="avatar">
-                                            <p class="name">
-                                                <span class="status off"><i class="en-dot"></i></span> Fellix Jones
-                                                <span class="notification">1</span>
-                                                <span class="time">7:15 am</span>
-                                            </p>
-                                            <p class="msg">
-                                                I have some issues when try to reach my product page can you ...
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="mail-list clearfix">
-                                        <a href="#">
-                                            <img src="assets-xitong/img/avatars/131.jpg" class="mail-avatar pull-left" alt="avatar">
-                                            <p class="name">
-                                                <span class="status"><i class="en-dot"></i></span> Tina Dowsen
-                                                <span class="notification">5</span>
-                                                <span class="time">03:46 am</span>
-                                            </p>
-                                            <p class="msg">
-                                                Hello Sugge, i want to apply for your referal program , please ...
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="mail-more">
-                                        <a href="email-inbox">View all <i class="en-arrow-right7"></i></a>
-                                    </li>
-                                </ul>
-                            </li>
+ 
                         </ul>
                         <ul class="nav navbar-nav pull-right" style="color:green;">
                             <li class="dropdown">
                                 <a href="#" data-toggle="dropdown">
-                                    <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">
+                                                                                          	 用户：
+                                    <!-- <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">  -->
                                     <c:if test="${null==User.username}">
                                                                                             请登录 
                                     </c:if>                                                                   
                                     <c:if test="${User.username!=''}">
-                                    ${User.username} 
+                                     ${User.username} 
                                     </c:if>                                                                   
                                     </a>
                                 <ul class="dropdown-menu right" role="menu">
-                                    <li><a href="profile"><i class="st-user"></i> Profile</a>
+                                    <li><a href="javascript:showMes()"><i class="st-user"></i> 修改密码</a>
                                     </li>
-                                    <li><a href="file"><i class="st-cloud"></i> Files</a>
-                                    </li>
-                                    <li><a href="#"><i class="st-settings"></i> Settings</a>
-                                    </li>
-                                    <li><a href="login"><i class="im-exit"></i> Logout</a>
+                                    <li><a href="login"><i class="im-exit"></i> 退出</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li id="toggle-right-sidebar-li"><a href="#" id="toggle-right-sidebar"><i class="ec-users"></i> <span class="notification">3</span></a>
                             </li>
                         </ul>
                     </nav>
@@ -265,30 +157,30 @@
                     </li>
                     <li><a href="index"><spring:message code="index.1-mulu"></spring:message><i class="im-screen"></i></a>
                     </li>
-                    <li><a href="charts"><spring:message code="index.2-mulu"></spring:message><i class="st-chart"></i></a>
-                    </li>
+                    <%-- <li><a href="javascript:showMes()"><spring:message code="index.2-mulu"></spring:message><i class="st-chart"></i></a>
+                    </li> --%>
                     <li>
-                        <a href="#"> <spring:message code="index.3-mulu"></spring:message> <i class="im-paragraph-justify"></i></a>
+                        <a href="#">  简介 <i class="im-paragraph-justify"></i></a>
                         <ul class="nav sub">
-                            <li><a href="forms"><i class="ec-pencil2"></i> <spring:message code="index.3-mulu-1"></spring:message> </a>
+                            <li><a href="javascript:showMes()"><i class="ec-pencil2"></i> 网站介绍  </a>
                             </li>
-                            <li><a href="form-validation"><i class="im-checkbox-checked"></i> <spring:message code="index.3-mulu-2"></spring:message> </a>
+                            <li><a href="javascript:authorMes()"><i class="im-checkbox-checked"></i> 联系方式</a>
                             </li>
-                            <li><a href="form-wizard"><i class="im-wand"></i> <spring:message code="index.3-mulu-3"></spring:message> </a>
+                          <%--   <li><a href="form-wizard"><i class="im-wand"></i> <spring:message code="index.3-mulu-3"></spring:message> </a>
                             </li>
                             <li><a href="wysiwyg"><i class="fa-pencil"></i> <spring:message code="index.3-mulu-4"></spring:message> </a>
-                            </li>
+                            </li> --%>
                         </ul>
                     </li>
-                    <li><a href="#"> <spring:message code="index.4-mulu"></spring:message> <i class="im-table2"></i></a>
+                    <%-- <li><a href="#"> <spring:message code="index.4-mulu"></spring:message> <i class="im-table2"></i></a>
                         <ul class="nav sub">
                             <li><a href="tables"><i class="en-arrow-right7"></i> Static tables</a>
                             </li>
                             <li><a href="data-tables"><i class="en-arrow-right7"></i> Data tables</a>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#"> <spring:message code="index.5-mulu"></spring:message>  <i class="st-lab"></i></a>
+                    </li> --%>
+                    <%-- <li><a href="#"> <spring:message code="index.5-mulu"></spring:message>  <i class="st-lab"></i></a>
                         <ul class="nav sub">
                             <li><a href="notifications"><i class="fa-bell"></i> Notifications</a>
                             </li>
@@ -311,8 +203,8 @@
                             <li><a href="list"><i class="fa-list"></i> Lists</a>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#"><i class="ec-mail"></i> <spring:message code="index.6-mulu"></spring:message> </a>
+                    </li> --%>
+                   <%--  <li><a href="#"><i class="ec-mail"></i> <spring:message code="index.6-mulu"></spring:message> </a>
                         <ul class="nav sub">
                             <li><a href="email-inbox"><i class="ec-archive"></i> Inbox</a>
                             </li>
@@ -321,22 +213,22 @@
                             <li><a href="email-write"><i class="ec-pencil2"></i> Write email</a>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="file"><i class="en-upload"></i><spring:message code="index.7-mulu"></spring:message> </a>
+                    </li> --%>
+                    <%-- <li><a href="file"><i class="en-upload"></i><spring:message code="index.7-mulu"></spring:message> </a>
                     </li>
                     <li><a href="gallery"><i class="im-images"></i> Gallery</a>
                     </li>
                     <li><a href="widgets"><i class="st-diamond"></i> Widgets </a>
-                    </li>
-                    <li><a href="#"><i class="ec-location"></i> Maps</a>
+                    </li> --%>
+                   <!--  <li><a href="#"><i class="ec-location"></i> Maps</a>
                         <ul class="nav sub">
                             <li><a href="maps-google"><i class="im-map2"></i> Google maps</a>
                             </li>
                             <li><a href="maps-vector"><i class="en-location2"></i> Vector maps</a>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="#"><spring:message code="index.5-mulu"></spring:message>  <i class="st-files"></i></a>
+                    </li> -->
+                    <%-- <li><a href="#"><spring:message code="index.5-mulu"></spring:message>  <i class="st-files"></i></a>
                         <ul class="nav sub">
                             <li><a href="invoice"><i class="st-file"></i> Invoice</a>
                             </li>
@@ -372,11 +264,25 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> --%>
                     <li>
-                        <a href="#">Bonus <i class="im-gift"></i></a>
+                        <a href="#">笔记分享 <i class="im-gift"></i></a>
                         <ul class="nav sub">
-                            <li><a href="landing"><i class="im-airplane"></i> Landing page</a>
+                            <li><a href="http://note.youdao.com/noteshare?id=3a503126ef5732582d94b444d3864010"><i class="im-airplane"></i> SpringBoot</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=5df474191519529001f24c0eecc596ab"><i class="im-airplane"></i> 负载均衡</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=bf0a998b9f5fe2486e4a3fab42f6839d"><i class="im-airplane"></i> java爬虫</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=db80a8efb8cbeb36a69df4d89abddb3e"><i class="im-airplane"></i> 通信协议</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=2902f89b168d02b55f907c7b2212c3d4"><i class="im-airplane"></i> redis</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=fce22065d6c5578400ba573f2fce7bad"><i class="im-airplane"></i> Servlet</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=056033f47fb28d05bbad1c2a1eb2c6d2"><i class="im-airplane"></i> git</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=3103f739d2ca3f5b77af748e1648322f"><i class="im-airplane"></i> SpringMVC</a>
                             </li>
                         </ul>
                     </li>
@@ -386,26 +292,26 @@
                 <div class="sidebar-panel">
                     <h4 class="sidebar-panel-title"><i class="im-fire"></i> Server usage</h4>
                     <div class="sidebar-panel-content">
-                        <ul class="server-stats">
+                        <!-- <ul class="server-stats">
                             <li>
                                 <span class="txt">Disk space</span>
-                                <span class="percent">78</span>
+                                <span class="percent">100</span>
                                 <div id="usage-sparkline" class="sparkline">Loading...</div>
                                 <div class="pie-chart" data-percent="78"></div>
                             </li>
-                        </ul>
-                        <ul class="server-stats">
+                        </ul> -->
+                        <!-- <ul class="server-stats">
                             <li>
                                 <span class="txt">CPU</span>
                                 <span class="percent">56</span>
                                 <div id="cpu-sparkline" class="sparkline">Loading...</div>
                                 <div class="pie-chart" data-percent="56"></div>
                             </li>
-                        </ul>
+                        </ul> -->
                         <ul class="server-stats">
                             <li>
-                                <span class="txt">Memory</span>
-                                <span class="percent">14</span>
+                                <span class="txt">今日收获</span>
+                                <span class="percent">20</span>
                                 <div id="ram-sparkline" class="sparkline">Loading...</div>
                                 <div class="pie-chart" data-percent="14"></div>
                             </li>
@@ -571,7 +477,7 @@
                     <!-- Start .row -->
                     <!-- Start .page-header -->
                     <div class="col-lg-12 heading">
-                        <h1 class="page-header"><i class="im-screen"></i> Dashboard</h1>
+                        <h1 class="page-header"><i class="im-screen"></i>DW STUDIO</h1>
                         <!-- Start .bredcrumb -->
                         <ul id="crumb" class="breadcrumb">                    
                         </ul>
@@ -688,7 +594,7 @@
                     <!-- Page start here ( usual with .row ) -->
                     <div class="row">
                         <!-- Start .row -->
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                       <!--  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="carousel-tile carousel vertical slide">
                                 <div class="carousel-inner">
                                     <div class="item active">
@@ -704,7 +610,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="tile orange">
-                                            <!-- tile start here -->
+                                            tile start here
                                             <div class="tile-icon">
                                                 <i class="ec-cog s64"></i>
                                             </div>
@@ -716,9 +622,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Carousel -->
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                          
+                        </div> -->
+                          <!-- End Carousel -->
+                        <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="carousel-tile carousel slide">
                                 <div class="carousel-inner">
                                     <div class="item active">
@@ -734,7 +641,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="tile brown">
-                                            <!-- tile start here -->
+                                            tile start here
                                             <div class="tile-icon">
                                                 <i class="ec-mail s64"></i>
                                             </div>
@@ -746,8 +653,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Carousel -->
-                        </div>
+                            End Carousel
+                        </div> -->
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                             <div class="carousel-tile carousel vertical slide">
                                 <div class="carousel-inner">
@@ -815,8 +722,8 @@
                         <!-- Start .row -->
                         <div class="col-lg-6 col-md-6 sortable-layout">
                             <!-- Start col-lg-6 -->
-                            <div class="panel panel-teal toggle panelMove panelClose panelRefresh">
-                                <!-- Start .panel -->
+                            <!-- <div class="panel panel-teal toggle panelMove panelClose panelRefresh">
+                                Start .panel
                                 <div class="panel-heading">
                                     <h4 class="panel-title"><i class="im-bars"></i> Page views</h4>
                                 </div>
@@ -857,7 +764,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- End .panel -->
                             <div class="panel panel-brown panelMove">
                                 <!-- Start .panel -->
@@ -958,8 +865,8 @@
                         <!-- End col-lg-6 -->
                         <div class="col-lg-6 col-md-6 sortable-layout">
                             <!-- Start col-lg-6 -->
-                            <div class="panel panel-primary plain toggle panelMove panelClose panelRefresh">
-                                <!-- Start .panel -->
+                           <!--  <div class="panel panel-primary plain toggle panelMove panelClose panelRefresh">
+                                Start .panel
                                 <div class="panel-heading">
                                     <h4 class="panel-title"><i class="im-bars"></i> Week Earnings</h4>
                                 </div>
@@ -972,9 +879,9 @@
                                     <div id="stats-earnings-bars" class="col-lg-6 col-md-12" style="height:150px;">
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- End .panel -->
-                            <div class="weather-widget panel panel-primary plain toggle panelMove panelClose panelRefresh">
+                            <%-- <div class="weather-widget panel panel-primary plain toggle panelMove panelClose panelRefresh">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
                                     <h4 class="panel-title">Weather now</h4>
@@ -1013,7 +920,7 @@
                                     </div>
                                     <!-- col-lg-3 end here -->
                                 </div>
-                            </div>
+                            </div> --%>
                             <!-- End .panel -->
                             <div class="panel panel-default toggle panelMove panelClose panelRefresh">
                                 <!-- Start .panel -->
@@ -1163,5 +1070,14 @@
         <script src="assets-xitong/js/jquery.sprFlat.js"></script>
         <script src="assets-xitong/js/app.js"></script>
         <script src="assets-xitong/js/pages/dashboard.js"></script>
+        
+        <script>
+        function showMes(){
+        	alert("本功能作为演示，暂未开放");
+        }
+        function authorMes(){
+        	alert("非常感谢，作者QQ：625073235");
+        }
+        </script>
     </body>
 </html>

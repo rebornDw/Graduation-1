@@ -805,7 +805,7 @@ body.full-screen #header {
   right: 10px;
 }
 #header .navbar .nav li.dropdown.open .email {
-  min-width: 300px;
+  min-width: 100%;
 }
 #header .navbar .nav li.dropdown.open .email li.mail-head {
   margin-top: 5px;
@@ -1039,7 +1039,7 @@ body.full-screen #header {
   z-index: -1;
 }
 #sidebar .sidebar-inner {
-  position: relative;
+  position: absolute;
   width: auto;
   height: 100%;
 }
@@ -1258,11 +1258,11 @@ body.full-screen #header {
    Content
 ----------------------------------------- */
 #content {
-  margin-left: 210px;
+  margin-left: 0px;
   padding: 50px 25px 25px 25px;
 }
 #content.sidebar-page {
-  margin-left: 210px;
+  margin-left: 0px;
 }
 #content.full-page {
   margin-left: 0;
@@ -3193,7 +3193,7 @@ pre {
   #header .navbar .top-nav .navbar-nav .open .dropdown-menu {
     max-height: 300px;
     overflow: auto;
-    position: absolute;
+    position: relative;
     float: left;
     padding: 5px 0;
     background-color: #ffffff;

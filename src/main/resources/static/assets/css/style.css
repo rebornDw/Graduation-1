@@ -2,9 +2,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 600;
     color: #ffff00;
     line-height: 30px;
+     height:100%;
     text-align: center;
 }
 
@@ -118,7 +119,7 @@ ul.navbar-nav {
 	color: #fff;
 }
 
-.top-content .text h1 { color: #fff; }
+.top-content .text h1 { color: #a94442; }
 
 .top-content .description {
 	margin: 20px 0 10px 0;
@@ -145,11 +146,11 @@ ul.navbar-nav {
 .form-top-left {
 	float: left;
 	width: 75%;
-	padding-top: 25px;
+	/* padding-top: 25px; */
 }
 
-.form-top-left h3 { margin-top: 0; color: #fff; }
-.form-top-left p { color: #fff; opacity: 0.8; }
+.form-top-left h3 { margin-top: 0; color: #333; }
+.form-top-left p { color: #333; font-size: 25px;opacity: 0.8; }
 
 .form-top-right {
 	float: left;

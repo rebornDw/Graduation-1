@@ -20,7 +20,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><spring:message code="denglu.title"></spring:message></title>
+<title>登陆页面</title>
 <link rel="stylesheet"
 	href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -28,8 +28,6 @@
 	href="assets/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/form-elements.css">
 <link rel="stylesheet" href="assets/css/style.css">
-
-
 <link rel="shortcut icon" href="assets/ico/favicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="144x144"
 	href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -39,6 +37,7 @@
 	href="assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed"
 	href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=2.0" />
 </head>
 <body>
 	<!-- Top content -->
@@ -48,12 +47,11 @@
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2 text">
 						<h1>
-							<strong><spring:message code="denglu.welcome"></spring:message></strong>
+							<strong>DW Studio</strong>
 						</h1>
 						<div class="description">
 							<p>
-								<spring:message code="denglu.description"></spring:message>
-								</strong></a>,
+							
 							</p>
 						</div>
 					</div>
@@ -66,7 +64,7 @@
 				<div class="col-sm-5 form-box">
 					<div class="form-top">
 						<div class="form-top-left">
-							<h3><spring:message code="denglu.welcome"></spring:message></h3>
+							<h3>Please enter your username and password.</h3>
 							<p>请输入用户名和密码:</p>
 						</div>
 						<div class="form-top-right">
@@ -82,7 +80,7 @@
 							</div>
 							<input id="username" type="text"
 								class="form-first-name form-control"
-								style="width: 490px; height: 50px;">
+								style=" height: 50px;">
 						</div>
 						<div class="form-group">
 							<div class="form-top-left">
@@ -90,18 +88,20 @@
 							</div>
 							<input id="password" type="password"
 								class="form-last-name form-control"
-								style="width: 490px; height: 50px;">
+								style=" height: 50px;">
 						</div>
 						<div class="form-group">
 							<input 
 							    type="button"
-								style=" background: #87CE00; width: 490px; height: 50px; color: white;"
+							    class="form-last-name form-control"
+								style=" background: #87CE00; height: 50px; color: white;"
 								class="btn" value="登陆" onclick="ok()">
 						</div>
 						<div class="form-group">
 							<input
 							    type="button"
-								style="background: #87CE00; width: 490px; height: 50px; color: white;"
+							    class="form-last-name form-control"
+								style="background: #87CE00;  height: 50px; color: white;"
 								class="btn" value="加入我们"
 								onclick="zhuce()">
 						</div>
