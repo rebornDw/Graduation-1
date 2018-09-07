@@ -755,7 +755,7 @@ body.full-screen #header {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   overflow-x: hidden;
-  font-size: 13px;
+  font-size: 20px;
   min-width: 50px;
   text-align: center;
   outline: none;
@@ -763,6 +763,7 @@ body.full-screen #header {
 #header .navbar .nav li a:hover,
 #header .navbar .nav li a:focus {
   background: #3498da;
+  
 }
 #header .navbar .nav li a i {
   font-size: 24px;
@@ -1341,7 +1342,7 @@ body.full-screen #header {
   height: 50px;
   margin-bottom: 20px;
   margin-top: -120px;
-  padding-left: 15px;
+  padding-right: 60px;
 }
 #content .content-wrapper .heading .option-buttons .dropdown-menu {
   margin-top: 15px;
@@ -1632,19 +1633,21 @@ body.full-screen #header {
   display: inline-block;
 }
 .tile .tile-content .number {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 18px;
+/*   line-height: 48px; */
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   margin-left: 7px;
 }
 .tile .tile-content h1,
 .tile .tile-content h2,
-.tile .tile-content h3,
+/* .tile .tile-content h3, */
 .tile .tile-content h4,
 .tile .tile-content h5,
 .tile .tile-content h6 {
-  font-size: 14px;
+	line-height: 120px;
+  font-size: 40px;
   font-weight: normal;
+  
 }
 .tile .tile-content h1,
 .tile .tile-content h2,

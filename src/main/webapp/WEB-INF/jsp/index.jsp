@@ -48,22 +48,15 @@
                 <div class="navbar">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index">
-                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">spr</span><span class="text-slogan">flat</span> 
+                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">D</span><span class="text-slogan">W</span> 
                         </a>
                     </div>
                     <nav class="top-nav" role="navigation">
-                        <ul class="nav navbar-nav pull-left">
+                        <ul class="nav navbar-nav pull-left" 	>
                             
-                            <li id="toggle-sidebar-li">
-                                <a href="#" id="toggle-sidebar">目录<br> <i class="en-arrow-left2"></i> 
-                        </a>
-                            </li>
- 
-                        </ul>
-                        <ul class="nav navbar-nav pull-right" style="color:green;">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown">
-                                                                                          	 用户：
+                            <li class="dropdown" style="margin-left: 0%;">
+                                <a href="#" data-toggle="dropdown" >
+                                     <i class="st-user"></i>                                                     	 用户：
                                     <!-- <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">  -->
                                     <c:if test="${null==User.username}">
                                                                                             请登录 
@@ -75,11 +68,23 @@
                                 <ul class="dropdown-menu right" role="menu">
                                     <li><a href="javascript:showMes()"><i class="st-user"></i> 修改密码</a>
                                     </li>
-                                    <li><a href="login"><i class="im-exit"></i> 退出</a>
+                                    <li><a href="javascript:showMes()"><i class="st-user"></i> 我的提交</a>
                                     </li>
+                                    <li><a href="login"><i class="im-exit"></i> 前往登录</a>
+                                    </li>
+                                   
                                 </ul>
                             </li>
+                            
+                            <li id="toggle-sidebar-li" style="padding-right: 10px">
+                                <a href="#" id="toggle-sidebar" ><nbsp>功能导航
+                                </a>
+                            </li>
+                             
                         </ul>
+                        <!-- <ul class="nav navbar-nav pull-right" style="color:green;">
+
+                        </ul> -->
                     </nav>
                 </div>
                 <!-- Start #header-area -->
@@ -148,17 +153,41 @@
             <div class="sidebar-inner">
                 <!-- Start #sideNav -->
                 <ul id="sideNav" class="nav nav-pills nav-stacked">
+                
+                 <li><a href="index">首页<i class="im-screen"></i></a>
+                    </li>
                     <li class="top-search">
                         <form>
-                            <input type="text" name="search" placeholder="搜索 ...">
+                            <input type="text" name="search" placeholder="(目录搜索...)">
                             <button type="submit"><i class="ec-search s20"></i>
                             </button>
                         </form>
                     </li>
-                    <li><a href="index"><spring:message code="index.1-mulu"></spring:message><i class="im-screen"></i></a>
-                    </li>
+                    
+                   
                     <%-- <li><a href="javascript:showMes()"><spring:message code="index.2-mulu"></spring:message><i class="st-chart"></i></a>
                     </li> --%>
+                    <li>
+                        <a href="#">笔记分享 <i class="im-gift"></i></a>
+                        <ul class="nav sub">
+                            <li><a href="http://note.youdao.com/noteshare?id=3a503126ef5732582d94b444d3864010"><i class="im-airplane"></i> SpringBoot</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=5df474191519529001f24c0eecc596ab"><i class="im-airplane"></i> 负载均衡</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=bf0a998b9f5fe2486e4a3fab42f6839d"><i class="im-airplane"></i> java爬虫</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=db80a8efb8cbeb36a69df4d89abddb3e"><i class="im-airplane"></i> 通信协议</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=2902f89b168d02b55f907c7b2212c3d4"><i class="im-airplane"></i> redis</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=fce22065d6c5578400ba573f2fce7bad"><i class="im-airplane"></i> Servlet</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=056033f47fb28d05bbad1c2a1eb2c6d2"><i class="im-airplane"></i> git</a>
+                            </li>
+                            <li><a href="http://note.youdao.com/noteshare?id=3103f739d2ca3f5b77af748e1648322f"><i class="im-airplane"></i> SpringMVC</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="#">  简介 <i class="im-paragraph-justify"></i></a>
                         <ul class="nav sub">
@@ -265,27 +294,7 @@
                             </li>
                         </ul>
                     </li> --%>
-                    <li>
-                        <a href="#">笔记分享 <i class="im-gift"></i></a>
-                        <ul class="nav sub">
-                            <li><a href="http://note.youdao.com/noteshare?id=3a503126ef5732582d94b444d3864010"><i class="im-airplane"></i> SpringBoot</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=5df474191519529001f24c0eecc596ab"><i class="im-airplane"></i> 负载均衡</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=bf0a998b9f5fe2486e4a3fab42f6839d"><i class="im-airplane"></i> java爬虫</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=db80a8efb8cbeb36a69df4d89abddb3e"><i class="im-airplane"></i> 通信协议</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=2902f89b168d02b55f907c7b2212c3d4"><i class="im-airplane"></i> redis</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=fce22065d6c5578400ba573f2fce7bad"><i class="im-airplane"></i> Servlet</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=056033f47fb28d05bbad1c2a1eb2c6d2"><i class="im-airplane"></i> git</a>
-                            </li>
-                            <li><a href="http://note.youdao.com/noteshare?id=3103f739d2ca3f5b77af748e1648322f"><i class="im-airplane"></i> SpringMVC</a>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
                 <!-- End #sideNav -->
                 <!-- Start .sidebar-panel -->
@@ -490,7 +499,7 @@
                                         <i class="ec-refresh color-red s24"></i>
                                     </a>
                                 </div>
-                                <div class="btn-group dropdown">
+                              <!--   <div class="btn-group dropdown">
                                     <a class="btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1"><i class="br-grid s24"></i></a>
                                     <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
                                         <div class="option-dropdown">
@@ -532,7 +541,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="btn-group dropdown">
                                     <a class="btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu2"><i class="ec-pencil s24"></i></a> 
                                     <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu2">
@@ -570,7 +579,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btn-group">
+                                <!-- <div class="btn-group">
                                     <a class="btn dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3"><i class="ec-help s24"></i></a>
                                     <div class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu3">
                                         <div class="option-dropdown">
@@ -581,7 +590,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- End .option-buttons -->
@@ -664,8 +673,15 @@
                                                 <i class="ec-users s64"></i>
                                             </div>
                                             <div class="tile-content">
-                                                <div class="number">325</div>
-                                                <h3>New users</h3>
+                                               <!--  <div class="number">qqq</div> -->
+                                               <!-- <div class="number"></div> -->
+                                               <br>
+                                               <h4>沟通</h4>
+                                                <br>
+                                               <h3>Communicate</h3>
+                                              
+                                              <!--   <h3>交流</h3>
+                                                <h3>Learning and communication skills</h3> -->
                                             </div>
                                         </div>
                                     </div>
@@ -676,8 +692,11 @@
                                                 <i class="ec-search s64"></i>
                                             </div>
                                             <div class="tile-content">
-                                                <div class="number">2540</div>
-                                                <h3>Searches</h3>
+                                               <!--  <div class="number">2540</div> -->
+                                                <br>
+                                               <h4>发现</h4>
+                                                <br>
+                                               <h3>find</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -695,8 +714,10 @@
                                                 <i class="ec-images s64"></i>
                                             </div>
                                             <div class="tile-content">
-                                                <div class="number">45</div>
-                                                <h3>New images</h3>
+                                             <br>
+                                                <h4>学习</h4>
+                                                <br>
+                                               <h3>Study</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -707,8 +728,10 @@
                                                 <i class="ec-share s64"></i>
                                             </div>
                                             <div class="tile-content">
-                                                <div class="number">3548</div>
-                                                <h3>Posts shared</h3>
+                                                <br>
+                                                <h4>分享</h4>
+                                                <br>
+                                               <h3>share</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -769,9 +792,9 @@
                             <div class="panel panel-brown panelMove">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="st-camera"></i> Instagram activity</h4>
+                                    <h4 class="panel-title"><i class="st-camera"></i> 记录</h4>
                                     <div class="pull-right mt10">
-                                        <a href="#" class="color-grayspr">@SuggeElson</a> 
+                                        <a href="#" class="color-grayspr">精彩瞬间</a> 
                                     </div>
                                 </div>
                                 <div class="panel-body p0">
@@ -780,24 +803,24 @@
                                             <div class="col-lg-4 col-md-4 col-xs-4 text-center">
                                                 <!-- col-lg-4 start here -->
                                                 <a href="#">
-                                                    <p class="instagram-widget-text">Followers</p>
-                                                    <strong class="instagram-widget-number">1256</strong> 
+                                                    <p class="instagram-widget-text">Scenery</p>
+                                                    <strong class="instagram-widget-number">风景</strong> 
                                                 </a>
                                             </div>
                                             <!-- col-lg-4 end here -->
                                             <div class="col-lg-4 col-md-4 col-xs-4 text-center">
                                                 <!-- col-lg-4 start here -->
                                                 <a href="#">
-                                                    <p class="instagram-widget-text">Following</p>
-                                                    <strong class="instagram-widget-number">345</strong> 
+                                                    <p class="instagram-widget-text">Harvest</p>
+                                                    <strong class="instagram-widget-number">收获</strong> 
                                                 </a>
                                             </div>
                                             <!-- col-lg-4 end here -->
                                             <div class="col-lg-4 col-md-4 col-xs-4 text-center">
                                                 <!-- col-lg-4 start here -->
                                                 <a href="#">
-                                                    <p class="instagram-widget-text">Shots</p>
-                                                    <strong class="instagram-widget-number">176</strong> 
+                                                    <p class="instagram-widget-text">Understand</p>
+                                                    <strong class="instagram-widget-number">感悟</strong> 
                                                 </a>
                                             </div>
                                             <!-- col-lg-4 end here -->
@@ -833,7 +856,7 @@
                                                 <p>
                                                     <a href="#">
                                                         <i class="ec-chat mr5"></i> 
-                                                        <strong class="instagram-widget-number">17</strong>
+                                                      <strong class="instagram-widget-number">comment</strong> 
                                                     </a>
                                                 </p>
                                             </div>
@@ -843,7 +866,7 @@
                                                 <p>
                                                     <a href="#">
                                                         <i class="ec-heart mr5"></i> 
-                                                        <strong class="instagram-widget-number">27</strong> 
+                                                        <strong class="instagram-widget-number">follow</strong> 
                                                     </a>
                                                 </p>
                                             </div>
@@ -925,21 +948,26 @@
                             <div class="panel panel-default toggle panelMove panelClose panelRefresh">
                                 <!-- Start .panel -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa-list"></i> ToDo</h4>
+                                    <h4 class="panel-title"><i class="fa-list"></i> 需求</h4>
                                 </div>
                                 <div class="panel-body">
                                     <div class="todo-widget">
                                         <div class="todo-header">
                                             <div class="todo-search">
                                                 <form>
-                                                    <input type="text" class="form-control" name="search" placeholder="Search for todo ...">
+                                                    <input type="text" class="form-control" name="search" placeholder="需求名称">
+                                                    <input type="text" class="form-control" name="search" placeholder="功能说明">
+                                                    <!-- <input type="text" class="form-control" name="search" placeholder="补充说明"> -->
+                                                    <input type="text" class="form-control" name="search" placeholder="交付日期">
+                                                   <!--  <input type="text" class="form-control" name="search" placeholder="预算"> -->
+                                                    <input type="text" class="form-control" name="search" placeholder="联系方式">
                                                 </form>
                                             </div>
                                             <div class="todo-add">
-                                                <a href="#" class="btn btn-primary tip" title="Add new todo"><i class="im-plus"></i></a>
+                                                <a type="button" href="#" class="btn btn-primary tip" title="提交" value="提交"><i class="im-plus"></i></a>
                                             </div>
                                         </div>
-                                        <h4 class="todo-period">Today</h4>
+                                        <h4 class="todo-period">框架支持</h4>
                                         <ul class="todo-list" id="today">
                                             <li class="todo-task-item">
                                                 <label class="checkbox">
@@ -948,8 +976,31 @@
                                                 <div class="todo-priority normal tip" title="Normal priority">
                                                     <i class="im-radio-checked"></i>
                                                 </div>
-                                                <span class="todo-category label label-primary"> javascript </span>
-                                                <div class="todo-task-text">Add scroll function to template</div>
+                                                <span class="todo-category label label-primary"> SpringMvc </span>
+                                                <div class="todo-task-text">传统后台框架</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                            <li class="todo-task-item">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                </label>
+                                                <div class="todo-priority normal tip" title="Normal priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <span class="todo-category label label-primary"> SpringBoot </span>
+                                                <div class="todo-task-text">流行后台框架</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                            <h4 class="todo-period">数据库支持</h4>
+                                            <li class="todo-task-item">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                </label>
+                                                <div class="todo-priority high tip" title="High priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <span class="todo-category label label-brown"> MySql </span>
+                                                <div class="todo-task-text">MySql数据库</div>
                                                 <button type="button" class="close todo-close">&times;</button>
                                             </li>
                                             <li class="todo-task-item">
@@ -959,33 +1010,34 @@
                                                 <div class="todo-priority high tip" title="High priority">
                                                     <i class="im-radio-checked"></i>
                                                 </div>
-                                                <span class="todo-category label label-brown"> less </span>
-                                                <div class="todo-task-text">Fix main less file</div>
+                                                <span class="todo-category label label-brown"> Oracle </span>
+                                                <div class="todo-task-text">Oracle数据库</div>
                                                 <button type="button" class="close todo-close">&times;</button>
                                             </li>
-                                            <li class="todo-task-item task-done">
+                                             <li class="todo-task-item">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" checked>
+                                                    <input type="checkbox">
                                                 </label>
                                                 <div class="todo-priority high tip" title="High priority">
                                                     <i class="im-radio-checked"></i>
                                                 </div>
-                                                <span class="todo-category label label-info"> html </span>
-                                                <div class="todo-task-text">Change navigation structure</div>
+                                                <span class="todo-category label label-brown"> Redis </span>
+                                                <div class="todo-task-text">非关系型数据库(缓存机制)</div>
                                                 <button type="button" class="close todo-close">&times;</button>
                                             </li>
+                                            
                                         </ul>
-                                        <h4 class="todo-period">Tomorrow</h4>
+                                        <h4 class="todo-period">页面支持</h4>
                                         <ul class="todo-list" id="tomorrow">
                                             <li class="todo-task-item">
                                                 <label class="checkbox">
                                                     <input type="checkbox">
                                                 </label>
-                                                <div class="todo-priority tip" title="Low priority">
+                                                <div class="todo-priority medium tip" title="Medium priority">
                                                     <i class="im-radio-checked"></i>
                                                 </div>
-                                                <span class="todo-category label label-dark"> css </span>
-                                                <div class="todo-task-text">Create slide panel widget</div>
+                                                <span class="todo-category label label-danger"> jsp </span>
+                                                <div class="todo-task-text">SpringBoot(额外也可配置)</div>
                                                 <button type="button" class="close todo-close">&times;</button>
                                             </li>
                                             <li class="todo-task-item">
@@ -995,11 +1047,36 @@
                                                 <div class="todo-priority medium tip" title="Medium priority">
                                                     <i class="im-radio-checked"></i>
                                                 </div>
-                                                <span class="todo-category label label-danger"> php </span>
-                                                <div class="todo-task-text">Edit the main controller</div>
+                                                <span class="todo-category label label-danger"> vue </span>
+                                                <div class="todo-task-text">前段框架</div>
                                                 <button type="button" class="close todo-close">&times;</button>
                                             </li>
                                         </ul>
+                                        <h5 class="todo-period">服务器支持</h5>
+                                          <ul class="todo-list" id="tomorrow">
+                                          <li class="todo-task-item">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                </label>
+                                                <div class="todo-priority tip" title="Low priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <span class="todo-category label label-dark"> tomcat </span>
+                                                <div class="todo-task-text">常规配置</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                         <li class="todo-task-item">
+                                                <label class="checkbox">
+                                                    <input type="checkbox">
+                                                </label>
+                                                <div class="todo-priority tip" title="Low priority">
+                                                    <i class="im-radio-checked"></i>
+                                                </div>
+                                                <span class="todo-category label label-dark"> ngix </span>
+                                                <div class="todo-task-text">负载均衡</div>
+                                                <button type="button" class="close todo-close">&times;</button>
+                                            </li>
+                                            </ul>
                                     </div>
                                 </div>
                             </div>
