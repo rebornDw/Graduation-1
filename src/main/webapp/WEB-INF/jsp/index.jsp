@@ -48,7 +48,7 @@
                 <div class="navbar">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index">
-                            <i class="im-windows8 text-logo-element animated bounceIn"></i><span class="text-logo">D</span><span class="text-slogan">W</span> 
+                            <!-- <i class="im-windows8 text-logo-element animated bounceIn"></i> --><span class="text-logo">D</span><span class="text-slogan">W</span> 
                         </a>
                     </div>
                     <nav class="top-nav" role="navigation">
@@ -960,6 +960,7 @@
                                                     <!-- <input type="text" class="form-control" name="search" placeholder="补充说明"> -->
                                                     <input type="text" class="form-control" name="search" placeholder="交付日期">
                                                    <!--  <input type="text" class="form-control" name="search" placeholder="预算"> -->
+                                                   <input type="text" class="form-control" name="search" placeholder="联系姓名">
                                                     <input type="text" class="form-control" name="search" placeholder="联系方式">
                                                 </form>
                                             </div>
@@ -978,7 +979,7 @@
                                                 </div>
                                                 <span class="todo-category label label-primary"> SpringMvc </span>
                                                 <div class="todo-task-text">传统后台框架</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                                <!-- <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                             <li class="todo-task-item">
                                                 <label class="checkbox">
@@ -989,7 +990,7 @@
                                                 </div>
                                                 <span class="todo-category label label-primary"> SpringBoot </span>
                                                 <div class="todo-task-text">流行后台框架</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                                <!-- <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                             <h4 class="todo-period">数据库支持</h4>
                                             <li class="todo-task-item">
@@ -1001,7 +1002,7 @@
                                                 </div>
                                                 <span class="todo-category label label-brown"> MySql </span>
                                                 <div class="todo-task-text">MySql数据库</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                                <!-- <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                             <li class="todo-task-item">
                                                 <label class="checkbox">
@@ -1012,7 +1013,7 @@
                                                 </div>
                                                 <span class="todo-category label label-brown"> Oracle </span>
                                                 <div class="todo-task-text">Oracle数据库</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                               <!--  <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                              <li class="todo-task-item">
                                                 <label class="checkbox">
@@ -1023,7 +1024,7 @@
                                                 </div>
                                                 <span class="todo-category label label-brown"> Redis </span>
                                                 <div class="todo-task-text">非关系型数据库(缓存机制)</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                               <!--  <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                             
                                         </ul>
@@ -1038,7 +1039,7 @@
                                                 </div>
                                                 <span class="todo-category label label-danger"> jsp </span>
                                                 <div class="todo-task-text">SpringBoot(额外也可配置)</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                               <!--  <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                             <li class="todo-task-item">
                                                 <label class="checkbox">
@@ -1049,7 +1050,7 @@
                                                 </div>
                                                 <span class="todo-category label label-danger"> vue </span>
                                                 <div class="todo-task-text">前段框架</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                              <!--   <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                         </ul>
                                         <h5 class="todo-period">服务器支持</h5>
@@ -1063,7 +1064,7 @@
                                                 </div>
                                                 <span class="todo-category label label-dark"> tomcat </span>
                                                 <div class="todo-task-text">常规配置</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+<!--                                                 <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                          <li class="todo-task-item">
                                                 <label class="checkbox">
@@ -1074,7 +1075,7 @@
                                                 </div>
                                                 <span class="todo-category label label-dark"> ngix </span>
                                                 <div class="todo-task-text">负载均衡</div>
-                                                <button type="button" class="close todo-close">&times;</button>
+                                                <!-- <button type="button" class="close todo-close">&times;</button> -->
                                             </li>
                                             </ul>
                                     </div>
