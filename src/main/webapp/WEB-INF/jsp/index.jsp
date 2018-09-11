@@ -788,6 +788,10 @@
 					"phone" : phone,
 				},
 				success : function(data) {
+					if(data=="500"){
+						alert("提交失败，请刷新页面后再尝试");
+						return;
+					}
 					alert("提交成功，我们会尽快联系您");
 					formDemandFlag=true;
 				}
