@@ -953,19 +953,17 @@
                                 <div class="panel-body">
                                     <div class="todo-widget">
                                         <div class="todo-header">
-                                            <div class="todo-search">
-                                                <form action="/formDemand">
-                                                    <input type="text" class="form-control" name="search" placeholder="需求名称">
-                                                    <input type="text" class="form-control" name="search" placeholder="功能说明">
+                                            <div >
+                                                    <input id="name" type="text" class="form-control" placeholder="需求名称">
+                                                    <input id="describe" type="text" class="form-control"  placeholder="功能说明">
                                                     <!-- <input type="text" class="form-control" name="search" placeholder="补充说明"> -->
-                                                    <input type="text" class="form-control" name="search" placeholder="交付日期">
+                                                    <input  id="date" type="text" class="form-control"  placeholder="交付日期">
                                                    <!--  <input type="text" class="form-control" name="search" placeholder="预算"> -->
-                                                   <input type="text" class="form-control" name="search" placeholder="联系姓名">
-                                                    <input type="text" class="form-control" name="search" placeholder="联系方式">
-                                                </form>
+                                                   <input id="username" type="text" class="form-control" name="search" placeholder="联系姓名">
+                                                    <input id="phone" type="text" class="form-control" name="search" placeholder="联系方式">
                                             </div>
                                             <div class="todo-add">
-                                                <a type="button" href="#" class="btn btn-primary tip" title="提交" value="提交"><i class="im-plus"></i></a>
+                                                <a type="button" onclick="formDemand();" class="btn btn-primary tip" title="提交" value="提交"><i class="im-plus"></i></a>
                                             </div>
                                         </div>
                                         <h4 class="todo-period">框架支持</h4>
@@ -1156,6 +1154,33 @@
         function authorMes(){
         	alert("非常感谢，作者QQ：625073235");
         }
-        </script>
+    	
+		function formDemand() {
+			var name = $('#name').val();
+			var describe = $('#describe').val();
+			var date = $('#date').val();
+			var username = $('#username').val();
+			var phone = $('#phone').val();
+			
+		    alert("准备提交");
+			var param = "/formDemand";
+			$.ajax({
+				url : param,
+				type : "post",
+				dataType : "json",
+				data : {
+					"name" : name,
+					"describe" : describe,
+					"date" : date,
+					"username" : username,
+					"phone" : phone,
+				},
+				success : function(data) {
+				alert("提交成功，我们会尽快联系您");
+				}
+			});
+		}
+	</script>
+     
     </body>
 </html>
