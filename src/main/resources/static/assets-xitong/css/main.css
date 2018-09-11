@@ -687,7 +687,7 @@ body.full-screen #header {
   height: 50px;
   margin-bottom: 0;
   padding-right: 20px;
-  background: #75b9e6;
+  background: #4d5769;
   border-radius: 0;
   border: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -748,21 +748,19 @@ body.full-screen #header {
   padding-top: 0;
   padding-bottom: 0;
   color: #ffffff;
-  width: auto;
   position: relative;
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   overflow-x: hidden;
-  font-size: 20px;
   min-width: 50px;
   text-align: center;
   outline: none;
 }
 #header .navbar .nav li a:hover,
 #header .navbar .nav li a:focus {
-  background: #3498da;
+  background: #535e6f;
   
 }
 #header .navbar .nav li a i {
@@ -974,7 +972,7 @@ body.full-screen #header {
 }
 #header .navbar .nav.navbar-nav > .open > a,
 #header .navbar .nav.navbar-nav > .open > a:focus {
-  background: #3498da;
+  background: #535e6f;
 }
 #header #header-area {
   width: 100%;
@@ -3174,7 +3172,7 @@ pre {
   #header .navbar .top-nav {
     float: left;
     width: 100%;
-    background: #75b9e6;
+    background: #4d5769;
     height: 50px;
     padding: 0 25px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -3195,7 +3193,9 @@ pre {
   }
   #header .navbar .top-nav .navbar-nav .open .dropdown-menu {
     max-height: 300px;
+    width: 50%;
     overflow: auto;
+    left: 30%;
     position: relative;
     float: left;
     padding: 5px 0;

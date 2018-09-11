@@ -53,9 +53,12 @@
                     </div>
                     <nav class="top-nav" role="navigation">
                         <ul class="nav navbar-nav pull-left" 	>
-                            
-                            <li class="dropdown" style="margin-left: 0%;">
-                                <a href="#" data-toggle="dropdown" >
+                            <li id="toggle-sidebar-li" style="padding-right: 10px;">
+                                <a href="#" id="toggle-sidebar" ><nbsp>功能导航
+                                </a>
+                            </li>
+                            <li class="dropdown" style="left: 30%;vertical-align:baseline">
+                                <a href="#" data-toggle="dropdown">
                                      <i class="st-user"></i>                                                     	 用户：
                                     <!-- <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">  -->
                                     <c:if test="${null==User.username}">
@@ -64,7 +67,8 @@
                                     <c:if test="${User.username!=''}">
                                      ${User.username} 
                                     </c:if>                                                                   
-                                    </a>
+                                </a>
+
                                 <ul class="dropdown-menu right" role="menu">
                                     <li><a href="javascript:showMes()"><i class="st-user"></i> 修改密码</a>
                                     </li>
@@ -75,11 +79,7 @@
                                    
                                 </ul>
                             </li>
-                            
-                            <li id="toggle-sidebar-li" style="padding-right: 10px">
-                                <a href="#" id="toggle-sidebar" ><nbsp>功能导航
-                                </a>
-                            </li>
+
                              
                         </ul>
                         <!-- <ul class="nav navbar-nav pull-right" style="color:green;">
