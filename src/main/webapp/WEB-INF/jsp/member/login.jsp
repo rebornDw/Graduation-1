@@ -102,7 +102,7 @@
 							    type="button"
 							    class="form-last-name form-control"
 								style="background: #87CE00;  height: 50px; color: white;"
-								class="btn" value="加入我们"
+								class="btn" value="注册"
 								onclick="zhuce()">
 						</div>
 					</div>
@@ -116,7 +116,10 @@
 
 <!-- JS的部分先这样写着以后再分开 -->
 	<script type="text/javascript">
+	     var flag=true;
 		function ok() {
+			if(flag){
+				flag=false;
 			var username = $('#username').val();
 			var password = $('#password').val();
 			if (username == "") { //验证用户名是否为空
@@ -138,19 +141,22 @@
 				},
 				success : function(data) {
 					if (data == "200") {
+						flag=true;
 						alert("欢迎用户 :"+ username);
 						window.location.href="/index";
 					} else if(data == "500"){
+						flag=true;
 						alert("请确认您输入的账户密码");
 					}	else if(data == "403"){
+						flag=true;
 						alert("欢迎管理员 :"+ username);
 						window.location.href="/index";
 					}
-				
+				    
 				}
 			});
 		}
-		
+		}
 		
 		function zhuce() {		
 			window.location.href="/register";	
