@@ -60,7 +60,7 @@
 					<ul class="nav navbar-nav pull-left">
 						<li id="toggle-sidebar-li" style="padding-right: 10px;"><a
 							href="#" id="toggle-sidebar"><nbsp>功能导航 </a></li>
-						<li class="dropdown" style="left: 30%; vertical-align: baseline">
+						<%-- <li class="dropdown" style="left: 30%; vertical-align: baseline">
 							<a href="#" data-toggle="dropdown"> <i class="st-user"></i>
 								用户： <!-- <img class="user-avatar" src="assets-xitong/img/avatars/48.jpg" alt="SuggeElson">  -->
 								<c:if test="${null==User.username}">
@@ -77,7 +77,7 @@
 										我的提交</a></li> -->
 								<li><a href="login"><i class="im-exit"></i> 前往登录</a></li>
 							</ul>
-						</li>
+						</li> --%>
 					</ul>
 				</nav>
 			</div>
@@ -564,12 +564,12 @@
 												class="form-control" placeholder="功能说明">
 											<!-- <input type="text" class="form-control" name="search" placeholder="补充说明"> -->
 											<input id="date" type="text" class="form-control"
-												placeholder="交付日期">
+												placeholder="开发时长">
 											<!--  <input type="text" class="form-control" name="search" placeholder="预算"> -->
 											<input id="username" type="text" class="form-control"
 												name="search" placeholder="联系姓名"> <input id="phone"
 												type="text" class="form-control" name="search"
-												placeholder="联系方式">
+												placeholder="手机号">
 										</div>
 										<div class="todo-add">
 											<a type="button" onclick="formDemand();"
@@ -623,7 +623,7 @@
 												<i class="im-radio-checked"></i>
 											</div> <span class="todo-category label label-brown"> Redis
 										</span>
-											<div class="todo-task-text">非关系型数据库(缓存机制)</div> <!--  <button type="button" class="close todo-close">&times;</button> -->
+											<div class="todo-task-text">Redis</div> <!--  <button type="button" class="close todo-close">&times;</button> -->
 										</li>
 
 									</ul>
@@ -635,7 +635,7 @@
 											<div class="todo-priority medium tip" title="Medium priority">
 												<i class="im-radio-checked"></i>
 											</div> <span class="todo-category label label-danger"> jsp </span>
-											<div class="todo-task-text">SpringBoot(额外也可配置)</div> <!--  <button type="button" class="close todo-close">&times;</button> -->
+											<div class="todo-task-text">普通页面</div> <!--  <button type="button" class="close todo-close">&times;</button> -->
 										</li>
 										<li class="todo-task-item"><label class="checkbox">
 												<input type="checkbox">
@@ -664,6 +664,34 @@
 												<i class="im-radio-checked"></i>
 											</div> <span class="todo-category label label-dark"> ngix </span>
 											<div class="todo-task-text">负载均衡</div> <!-- <button type="button" class="close todo-close">&times;</button> -->
+										</li>
+									</ul>
+									<h5 class="todo-period">其他技术</h5>
+									<ul class="todo-list" id="tomorrow">
+										<li class="todo-task-item"><label class="checkbox">
+												<input type="checkbox">
+										</label>
+											<div class="todo-priority medium tip" title="Medium priority">
+												<i class="im-radio-checked"></i>
+											</div> <span class="todo-category label label-danger"> rpgmv </span>
+											<div class="todo-task-text">页游开发</div> <!--  <button type="button" class="close todo-close">&times;</button> -->
+										</li>
+										<li class="todo-task-item"><label class="checkbox">
+												<input type="checkbox">
+										</label>
+											<div class="todo-priority tip" title="Low priority">
+												<i class="im-radio-checked"></i>
+											</div> <span class="todo-category label label-dark"> wx </span>
+											<div class="todo-task-text">微信小程序开发</div> <!-- <button type="button" class="close todo-close">&times;</button> -->
+										</li>
+										<li class="todo-task-item"><label class="checkbox">
+												<input type="checkbox">
+										</label>
+											<div class="todo-priority normal tip" title="Normal priority">
+												<i class="im-radio-checked"></i>
+											</div> <span class="todo-category label label-primary">
+												java </span>
+											<div class="todo-task-text">日常小工具</div> <!-- <button type="button" class="close todo-close">&times;</button> -->
 										</li>
 									</ul>
 								</div>
@@ -749,7 +777,7 @@
 			alert("本功能作为演示，暂未开放");
 		}
 		function describe() {
-			alert("此网站希望可以帮助更多人了解web编程，帮助大家解决一些需求问题");
+			alert("此网站希望可以帮助更多人了解编程，帮助大家解决一些需求问题");
 		}
 		function authorMes() {
 			alert("非常感谢，作者QQ：625073235");
@@ -763,16 +791,16 @@
 			var date = $('#date').val();
 			var username = $('#username').val();
 			var phone = $('#phone').val();
-			var user = "${User.username}";
+			/* var user = "${User.username}"; */
 			var param = "/formDemand";
-			if (user == "") {
+			/* if (user == "") {
 				alert("请您登陆后再提交需求");
 				formDemandFlag=true;
 				return;
-			}
+			} */
 			if (name == "" || describe == "" || date == "" || phone == ""
 					|| username == "") {
-				alert("请填写完整的信息后提交");
+				alert("请填写完整的信息后提交，并确保您的联系方式无误方便作者联系您");
 				formDemandFlag=true;
 				return;
 			}

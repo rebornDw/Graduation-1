@@ -116,19 +116,31 @@
 	</div>
 
 	<script type="text/javascript">
+	var zhuceFlag=true;
 		function zhuce() {
+			if(zhuceFlag){
+				zhuceFlag=false;
 			var username = $('#username').val();
 			var password = $('#password').val();
 			var email = $('#email').val();
 			var yourself = $('#yourself').val();
 			if (username == "") { //验证用户名是否为空
 				alert("请输入用户名！");
+				zhuceFlag=true;
 				return;
 			}
 			if (password == "") { //验证密码是否为空
 				alert("请输入密码！");
+				zhuceFlag=true;
 				return;
 			}
+			//邮箱校验
+			 var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;                
+			 if (!myreg.test(email)) {                    
+			alert("请输入正确的邮箱格式")   
+			zhuceFlag=true;
+			 return;                
+			 }
 			
 			var param = "/toRegister";
 			$.ajax({
@@ -142,6 +154,7 @@
 					"yourself" : yourself,
 				},
 				success : function(data) {
+					zhuceFlag=true;
 					if (data == "200") {
 						alert("注册成功");
 						window.location.href="/login";
@@ -150,6 +163,7 @@
 					}
 				}
 			});
+		}
 		}
 	</script>
 

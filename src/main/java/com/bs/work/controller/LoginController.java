@@ -133,7 +133,9 @@ public class LoginController{
                     ) throws IOException{
     	Date date=new Date();
     	User user=new User(username,password,email,yourself,date);
+    	usermanager.getUserByName(username);
 		try {
+			
 			usermanager.add(user);
 			return "200";
 		} catch (Exception e) {			
