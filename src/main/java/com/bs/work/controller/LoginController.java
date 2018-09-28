@@ -73,7 +73,22 @@ public class LoginController{
         return "member/login";
     }
     
-   
+    /**
+     *方法名：robert
+     *参数 ：@return
+     *功能 :进入机器人页面
+     *返回值：String
+     */
+    @RequestMapping("/tuling")
+    public String robert(){
+        return "tuling";
+    }
+    
+    
+    @RequestMapping("/tuling2")
+    public String robert2(){
+        return "tuling2";
+    }
        
     
     /**

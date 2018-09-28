@@ -96,8 +96,6 @@
 			<!-- <scope>provided</scope> -->
 		</dependency>
 
-
-
 		<!-- servlet 依赖 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -119,10 +117,8 @@
 			<artifactId>commons-collections4</artifactId>
 			<version>4.2</version>
 		</dependency>
+		
 		<!-- fastjson -->
-
-
-
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
